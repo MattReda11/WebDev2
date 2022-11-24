@@ -9,7 +9,7 @@ function UserActions(props) {
 }
 
 function toggle(color) {
-    return color === "blue" ? "red" : "blue";
+    return color === "blue" ? "red" : color === "red" ? "green" : "blue";
 }
 
 export default UserActions;
