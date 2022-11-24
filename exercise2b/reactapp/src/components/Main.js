@@ -16,7 +16,7 @@ function Main() {
     return (<div>
         <DisplayMessage color={color} />
         <Clock />
-        <CounterDisplay />
+        <CounterDisplay count={count} />
         <UserActions setColor={setColor} setCount={setCount} count={count} color={color} />
     </div>
     );
