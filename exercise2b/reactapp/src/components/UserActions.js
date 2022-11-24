@@ -1,3 +1,5 @@
+import { toggle } from "./toggle";
+
 function UserActions(props) {
     const handleOnClick = () => {
         props.setColor(toggle(props.color));
@@ -6,10 +8,6 @@ function UserActions(props) {
     return <button onClick={handleOnClick}>
         Click me React
     </button>
-}
-
-function toggle(color) {
-    return color === "blue" ? "red" : color === "red" ? "green" : "blue";
 }
 
 export default UserActions;
