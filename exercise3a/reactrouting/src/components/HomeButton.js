@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 function HomeButton() {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ function HomeButton() {
             flexDirection: "row", direction:
                 "rtl"
         }}>
-            <button onClick={handleSubmit}>Home</button>
+            <Button variant="primary" onClick={handleSubmit}>Home</Button>
         </div>
     );
 }
