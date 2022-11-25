@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HomeButton from "./HomeButton";
-
+import "../index.css";
 function Header() {
     return (
         <div>
@@ -9,9 +9,9 @@ function Header() {
                 <HomeButton />
             </div>
             <div>
-                <Link to="/">Home | </Link>
-                <Link to="/about">About | </Link>
-                <Link to="/contact">Contact</Link>
+                <NavLink className={({ isActive }) => isActive ? "link-active" : "link-inactive"} to="/">Home | </NavLink>
+                <NavLink className={({ isActive }) => isActive ? "link-active" : "link-inactive"} to="/about">About | </NavLink>
+                <NavLink className={({ isActive }) => isActive ? "link-active" : "link-inactive"} to="/contact">Contact</NavLink>
             </div>
         </div>
     );

@@ -1,0 +1,9 @@
+.link-active {
+    color: orange;
+    text-decoration: none;
+}
+
+.link-inactive {
+    color: blue;
+    text-decoration: none;
+}
