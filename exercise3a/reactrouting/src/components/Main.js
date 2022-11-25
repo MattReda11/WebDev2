@@ -3,7 +3,6 @@ import DisplayMessage from './DisplayMessage';
 import Clock from './Clock';
 import CounterDisplay from './CounterDisplay';
 import UserActions from './UserActions';
-import Header from "./Header";
 
 function Main() {
     const [color, setColor] = useState(JSON.parse(sessionStorage.getItem('color')) || "blue");
@@ -15,7 +14,6 @@ function Main() {
     }, [color, count]);
 
     return (<div>
-        <Header />
         <DisplayMessage color={color} />
         <Clock />
         <CounterDisplay count={count} />
