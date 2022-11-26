@@ -1,10 +1,16 @@
-.inactiveLink {
-    text-decoration: none;
+.inactiveLink p {
     color: white;
+}
+
+.activeLink p {
+    color: #1c8dc5;
+}
+
+.inactiveLink  {
+    text-decoration: none;
 }
 
 .activeLink {
     text-decoration: none;
-    color: #1c8dc5;
 }
 

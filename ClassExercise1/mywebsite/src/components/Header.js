@@ -2,7 +2,7 @@ import React from 'react';
 import NavButton from './NavButton';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
-import logo from "../images/logo.jpg";
+import logo from "../assets/images/logo.jpg";
 import "./Header.css"
 
 function Header() {
