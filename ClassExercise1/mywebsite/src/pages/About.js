@@ -1,11 +1,11 @@
 import React from "react";
-import YoutubeEmbed from "../components/YoutubeEmbed";
+import YoutubeEmbed from "../embeds/YoutubeEmbed";
 
 function About() {
     return (
         <div className="about">
             <div className="content">
-                <h2>About Me</h2>
+                <h1>About Me</h1>
                 <p>
                     I love working with filmmakers. They create fascinating stories that inspire me and set guidelines for my compositions. Time and again they push me to write differently and create music which I would never conceive without picture. I thrive to equally inspire filmmakers with my work.
                 </p>

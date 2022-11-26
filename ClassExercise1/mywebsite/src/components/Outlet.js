@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Credits from "../pages/Credits";
-import Albums from "../pages/Albums";
+import Discography from "../pages/Discography";
 import Contact from "../pages/Contact";
 import { Navigate } from "react-router-dom";
 
@@ -15,7 +15,7 @@ function Outlet() {
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
                     <Route path="credits" element={<Credits />} />
-                    <Route path="albums" element={<Albums />} />
+                    <Route path="discography" element={<Discography />} />
                     <Route path="contact" element={<Contact />} />
                 </Route>
                 <Route path="*" element={<Navigate to="/" />} />

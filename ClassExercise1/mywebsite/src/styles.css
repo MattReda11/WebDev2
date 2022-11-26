@@ -35,9 +35,10 @@ video {
 
 p {
     color:white;
+    font-size: 13pt;
 }
 
-h2 {
+h1 {
     color: #1c8dc5;
     padding-top: 0;
     text-align: center;
@@ -57,4 +58,10 @@ h2 {
     text-align: center;
 }
 
-
+.discs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    text-align: center;
+}

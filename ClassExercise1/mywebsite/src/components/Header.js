@@ -14,7 +14,7 @@ function Header() {
                     <NavButton to="/" label="Home" />
                     <NavButton to="/about" label="About" />
                     <NavButton to="/credits" label="Credits" />
-                    <NavButton to="/albums" label="Albums" />
+                    <NavButton to="/discography" label="Discography" />
                     <NavButton to="/contact" label="Contact" />
                 </Breadcrumbs>
             </div>

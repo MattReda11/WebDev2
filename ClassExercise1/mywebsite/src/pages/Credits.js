@@ -10,7 +10,7 @@ function Credits() {
     return (
         <div>
             <div className="title">
-                <h2>Credits</h2>
+                <h1>Credits</h1>
             </div>
             <div className="credits">
                 <div>
