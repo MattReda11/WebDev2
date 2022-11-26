@@ -1,5 +1,6 @@
 import React from "react";
 import SpotifyEmbed from "../embeds/SpotifyEmbed";
+import "../styles.css";
 
 function Albums() {
     return (

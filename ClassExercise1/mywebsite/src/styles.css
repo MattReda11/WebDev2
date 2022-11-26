@@ -23,7 +23,7 @@ video {
 .video-responsive iframe {
     left: 0;
     top: 0;
-    width: 40%;
+    width: 45%;
 }
 
 .content {
@@ -64,4 +64,17 @@ h1 {
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
     text-align: center;
+}
+
+.location {
+    padding-top:20px;
+    text-align: center;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    row-gap: 50px;
+    padding-bottom: 150px;
 }

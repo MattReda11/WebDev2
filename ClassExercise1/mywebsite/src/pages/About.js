@@ -1,5 +1,6 @@
 import React from "react";
 import YoutubeEmbed from "../embeds/YoutubeEmbed";
+import "../styles.css";
 
 function About() {
     return (

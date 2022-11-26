@@ -5,6 +5,7 @@ import Drought from "../assets/images/drought.jpg";
 import Feodan from "../assets/images/feodan.jpg";
 import Forest from "../assets/images/forest.jpg";
 import Spring from "../assets/images/spring.png";
+import "../styles.css";
 
 function Credits() {
     return (
