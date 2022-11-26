@@ -9,7 +9,9 @@ function Header() {
     return (
         <div className='header'>
             <div className='right'>
-                <img src={logo} title='Home' alt="Logo" width="150px" />
+                <a href='/' title="Home">
+                    <img src={logo} title='Home' alt="Logo" width="150px" />
+                </a>
                 <Breadcrumbs aria-label="breadcrumb" separator={<ArrowForwardIosRoundedIcon color="primary" fontSize='tiny' />} className="nav">
                     <NavButton to="/" label="Home" />
                     <NavButton to="/about" label="About" />
