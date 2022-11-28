@@ -27,4 +27,8 @@ app.use(express.json()); // Allows express to read a request body
 // Configuring body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.get('/users', async (req, res) => {
+    const users = await userModel.find();
+    res.send(users);
+});
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));

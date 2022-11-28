@@ -1,7 +1,7 @@
-import Main from "./components/Main";
+import Outlet from "./components/Outlet";
 
 // Code from Earlier examples
 function App() {
-  return <Main />;
+  return <Outlet />
 }
 export default App;
