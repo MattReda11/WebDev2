@@ -3,4 +3,4 @@ MongoDB info:
 Username: mongoUser
 Password: Mongodb123
 
-Connection URL: mongodb+srv://mongoUser:<Mongodb123>@firstcluster.rizeras.mongodb.net/?retryWrites=true&w=majority
+Connection URL: mongodb+srv://mongoUser:<Mongodb123>@firstcluster.rizeras.mongodb.net/myFirstDB?retryWrites=true&w=majority
