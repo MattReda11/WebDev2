@@ -1,39 +1,34 @@
+import React from "react";
 import DbData from "../components/DbData";
-import DbData2 from "../components/DbData2";
-import DbData3 from "../components/DbData3";
-import DbData4 from "../components/DbData4";
-import DbData5 from "../components/DbData5";
-import DbData6 from "../components/DbData6";
-import DbData7 from "../components/DbData7";
-import DbData8 from "../components/DbData8";
+import DisplayMessage from "../components/DisplayMessage"
+import Clock from "../components/Clock";
+import UserActions from "../components/UserActions";
+import CounterDisplay from "../components/CounterDisplay";
 
 function Home() {
+    const [color, setColor] = React.useState(JSON.parse(sessionStorage.getItem('color')) || "blue");
+    const [count, setCount] = React.useState(JSON.parse(localStorage.getItem('count')) || 0);
+    React.useEffect(() => {
+        sessionStorage.setItem('color', JSON.stringify(color));
+        localStorage.setItem('count', JSON.stringify(count));
+    }, [color, count]);
     return (
         <div>
-            <p>
+            <div>
+                <DisplayMessage color={color} />
+            </div>
+            <div>
+                <Clock />
+            </div>
+            <div>
+                <CounterDisplay count={count} />
+            </div>
+            <div>
+                <UserActions setColor={setColor} setCount={setCount} count={count} color={color} />
+            </div><br />
+            <div>
                 <DbData />
-            </p>
-            <p>
-                <DbData2 />
-            </p>
-            <p>
-                <DbData3 />
-            </p>
-            <p>
-                <DbData4 />
-            </p>
-            <p>
-                <DbData5 />
-            </p>
-            <p>
-                <DbData6 />
-            </p>
-            <p>
-                <DbData7 />
-            </p>
-            <p>
-                <DbData8 />
-            </p>
+            </div>
         </div>
     )
 
